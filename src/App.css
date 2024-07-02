@@ -1,0 +1,1377 @@
+/* LOG IN CSS------------------------------------------------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: auto;
+}
+
+.login .login-in {
+  text-align: center;
+}
+.login .login-in .img img {
+  width: 100%;
+  max-width: 128px;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+.login .login-in .box {
+  width: 400px;
+  margin: auto;
+  border: 1px solid #c8c8c8;
+  text-align: start;
+  font-family: cursive;
+}
+.login .login-in .box .box-in {
+  width: 74%;
+  margin: auto;
+  padding: 10px 0;
+}
+.login .login-in .box .box-in h1 {
+  padding-bottom: 16px;
+}
+.login .login-in .box .box-in input {
+  width: 100%;
+  padding: 7px;
+  border-radius: 4px;
+  border: 2px solid rgb(29, 40, 39);
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(29, 40, 39);
+  margin-bottom: 6px;
+}
+
+.login .login-in .box .box-in a {
+  text-decoration: none;
+  font-size: revert;
+  color: blueviolet;
+  display: block;
+  text-align: center;
+  font-family: math;
+  margin-top: 9px;
+}
+
+.login .login-in .box .box-in button {
+  width: 100%;
+  padding: 7px;
+  border-radius: 4px;
+  margin-top: 23px;
+  background-color: rgb(29, 40, 39);
+  cursor: pointer;
+  color: white;
+}
+.login .login-in .box .box-in button:hover {
+  background-color: rgb(62, 69, 69);
+  color: rgb(240, 235, 235);
+}
+.login .login-in .box .box-in .new p {
+  margin-top: 22px;
+  color: gray;
+  font-family: monospace;
+}
+.login .login-in .box .box-in .new p:hover {
+  cursor: pointer;
+}
+
+.login .login-in .box .box-in .create button {
+  background-color: rgb(233 233 233);
+  color: black;
+}
+.login .login-in .box .box-in .create button:hover {
+  background-color: rgb(179, 179, 179);
+}
+.login .login-in .box .box-in input:focus {
+  outline: none;
+  border: 2px solid rgb(29, 40, 39);
+}
+
+/* NAV CSS------------------------------------------------------------------------- */
+
+.nav .nav-in .image img {
+  width: 100%;
+  margin-top: 14px;
+  max-width: 102px;
+}
+.nav {
+  background-color: rgb(29, 40, 39);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav .nav-in {
+  display: flex;
+
+  justify-content: space-between;
+}
+.nav .nav-in .list li {
+  display: inline-block;
+  padding: 17px;
+  cursor: pointer;
+  font-family: system-ui;
+}
+.nav .nav-in .list a {
+  color: white;
+}
+.nav .nav-in .list li:hover {
+  color: rgb(172, 170, 170);
+}
+
+/* API CSS------------------------------------------------------------------------------- */
+
+.load {
+  margin: auto;
+}
+
+.loadimg {
+  width: 100%;
+  max-width: 150px;
+}
+
+.items .heading {
+  text-align: center;
+  margin-top: 24px;
+  font-family: monospace;
+  margin-bottom: 39px;
+  border-bottom: 2px double black;
+}
+
+.items .buttons {
+  text-align: center;
+  margin-bottom: 19px;
+}
+.items .buttons button {
+  margin: 23px;
+  background-color: rgb(29, 40, 39);
+  color: white;
+  width: 84px;
+  border-radius: 6px;
+  font-family: revert;
+  padding: 5px;
+}
+.items .buttons button:hover {
+  background-color: white;
+  transition: all 0.5s;
+  color: black;
+  cursor: pointer;
+}
+
+.items .container .item-1 {
+  width: 32%;
+  padding: 21px;
+  background-color: white;
+  margin-top: 4%;
+  border-radius: 10px;
+  border: 1px solid rgb(29, 40, 39);
+  margin: 7px;
+}
+
+.items .container .item-1:hover {
+  box-shadow: 0px 0 5px rgb(29, 40, 39);
+}
+.items .container .item-1 .title {
+  background-color: white;
+  font-family: math;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 14%;
+  font-size: 19px;
+}
+
+.items .container .item-1 .photo img {
+  width: 100%;
+  height: 340px;
+}
+.items .container .item-1 .photo {
+  overflow: hidden;
+}
+
+.items .container .item-1 .photo img:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+.items .products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.items .products .buttons {
+  text-align: center;
+}
+.items .container .item-1 .discription {
+  background-color: white;
+  padding-top: 24px;
+  font-family: math;
+  height: 79px;
+  overflow: hidden;
+}
+.items .container .item-1 .price h4 {
+  background-color: white;
+  padding: 4px;
+  font-family: system-ui;
+}
+.items .container .item-1 .price span {
+  background-color: white;
+  background-color: white;
+  padding-left: 15px;
+}
+.items .container .item-1 .price span .stars {
+  width: 6%;
+  padding: 0px;
+  background-color: white;
+  margin-bottom: -4px;
+}
+
+.items .container .item-1 .price .money h4 {
+  color: yellowgreen;
+  font-family: math;
+  font-size: x-large;
+  padding-top: 12px;
+}
+
+.items .container .item-1 .price .cart-btn {
+  background-color: #494848;
+  color: #e7e7e7;
+  padding: 6px;
+  width: 139px;
+  margin-top: 28px;
+  font-size: 13px;
+  font-family: revert;
+  font-weight: bold;
+  margin-right: 26px;
+}
+
+.items .container .item-1 .price .cart-btn:hover {
+  background-color: white;
+  transition: all 0.5s;
+  color: #494848;
+  cursor: pointer;
+}
+
+.items .container .item-1 .price .wishlist {
+  background-color: white;
+  color: black;
+  padding: 6px;
+  margin-top: 28px;
+  width: 139px;
+  font-size: 13px;
+  font-family: revert;
+  font-weight: bold;
+}
+
+.items .container .item-1 .price .wishlist:hover {
+  background-color: #494848;
+  transition: all 0.5s;
+  color: white;
+  cursor: pointer;
+}
+
+/* slider css --------------------------------------------------------------*/
+
+.slider .image {
+  display: flex;
+  position: relative;
+}
+.slider .image img {
+  width: 100%;
+  height: 550px;
+  animation: fead 3s;
+}
+.slider .btn .nxt {
+  position: absolute;
+  top: 45%;
+  right: 8px;
+  width: 26px;
+  border: none;
+  font-size: 20px;
+  opacity: 0.5;
+  background: none;
+}
+
+.slider .btn .nxt:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.slider .btn .back {
+  position: absolute;
+  top: 45%;
+  left: 8px;
+  width: 26px;
+  border: none;
+  font-size: 20px;
+  background: none;
+  opacity: 0.5;
+}
+.slider .btn .back:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.d-none {
+  display: none;
+}
+@keyframes fead {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* CONTACT CSS----------------------------------------------- */
+
+.contact {
+  background-color: #dadada2e;
+  padding-bottom: 71px;
+}
+
+.contact .form {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.contact .form h1 {
+  font-family: cursive;
+  font-size: 36px;
+  margin-bottom: 17px;
+  padding-bottom: 7px;
+  display: inline;
+  border-bottom: 4px solid rgb(29, 40, 39);
+}
+
+.contact .form p {
+  color: gray;
+  font-size: 19px;
+  font-family: serif;
+  margin-left: 83px;
+  padding-bottom: 59px;
+}
+
+.contact .contact-in {
+  display: flex;
+}
+
+.contact .contact-in .box-1 {
+  width: 30%;
+  background-color: rgb(29, 40, 39);
+}
+
+.contact .contact-in .box-2 {
+  background-color: white;
+  width: 67%;
+}
+
+.contact .contact-in .box-1 .location {
+  cursor: pointer;
+  display: flex;
+  width: 91%;
+  border-radius: 9px;
+  background-color: rgb(29, 40, 39);
+  margin: 20px;
+}
+
+.contact .contact-in .box-1 .location:hover {
+  background-color: rgb(21, 21, 21);
+}
+
+.contact .contact-in .box-1 .location .image img {
+  width: 72px;
+  padding: 9px;
+  margin-top: 8px;
+}
+
+.contact .contact-in .box-1 .location .text {
+  padding: 2px;
+  font-family: cursive;
+  color: white;
+}
+
+.contact .contact-in .box-2 .input {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px;
+}
+
+.contact .contact-in .box-2 .input .inp {
+  width: 49%;
+  height: 49px;
+  font-size: 14px;
+  padding: 22px;
+  border: 1px solid gray;
+}
+
+.contact .contact-in .box-2 .subject {
+  padding: 23px;
+}
+
+.contact .contact-in .box-2 .subject .sub {
+  width: 100%;
+  border: 1px solid gray;
+  height: 49px;
+  font-size: 14px;
+  padding: 22px;
+  border: 1px solid gray;
+}
+
+.contact .contact-in .box-2 .textarea {
+  padding: 20px;
+}
+
+.contact .contact-in .box-2 .textarea .ta {
+  width: 100%;
+  border: 1px solid gray;
+}
+
+.contact .contact-in .box-2 .bt {
+  text-align: center;
+}
+
+.contact .contact-in .box-2 .bt button {
+  background-color: transparent;
+  color: rgb(29, 40, 39);
+  border: 2px solid;
+  border-radius: 33px;
+  margin-top: 16px;
+  width: 169px;
+
+  height: 50px;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.contact .contact-in .box-2 button:hover {
+  background-color: rgb(84, 99, 98);
+  transition: all 0.5s;
+  color: white;
+  cursor: pointer;
+}
+
+/* FOOTER CSS---------------------------------------------------------- */
+
+.footer {
+  background-color: rgb(29, 40, 39);
+}
+
+.footer .container .footer-in {
+  display: flex;
+  padding-bottom: 44px;
+}
+
+.footer .container .footer-in .box-1 {
+  background-color: rgb(29, 40, 39);
+  cursor: pointer;
+  width: 40%;
+  padding: 20px;
+  font-family: cursive;
+  color: white;
+}
+
+.footer .container .footer-in .box-1 p {
+  font-family: math;
+}
+
+.footer .container .footer-in .icon {
+  margin-top: 22px;
+  font-size: 19px;
+}
+
+.footer .container .footer-in .icon li {
+  display: inline-block;
+  padding: 17px;
+}
+
+.footer .container .footer-in .box-2 {
+  background-color: rgb(29, 40, 39);
+  width: 20%;
+  color: white;
+  font-family: monospace;
+}
+
+.footer .container .footer-in .box-2 h2 {
+  padding: 35px;
+}
+
+.footer .container .footer-in .box-2 ul {
+  margin-left: 22px;
+  margin-top: -20px;
+}
+
+.footer .container .footer-in .box-2 ul li {
+  padding: 14px;
+  cursor: pointer;
+  color: #dfd9d9;
+  font-family: sans-serif;
+  display: block;
+}
+
+.footer .container .footer-in .box-2 ul li:hover {
+  color: white;
+}
+
+.footer .container .footer-in .box-3 {
+  background-color: rgb(29, 40, 39);
+  color: white;
+  font-family: monospace;
+  width: 20%;
+}
+
+.footer .container .footer-in .box-3 h2 {
+  padding: 35px;
+}
+
+.footer .container .footer-in .box-3 p {
+  font-family: sans-serif;
+  margin-left: 21px;
+  padding: 14px;
+}
+
+.footer .container .link {
+  text-align: center;
+  cursor: pointer;
+  color: #e0dcdc;
+  font-family: system-ui;
+}
+
+.footer .container .link strong {
+  color: white;
+}
+
+.footer .container .link p {
+  padding: 3px;
+}
+
+/* TESTIMONIALS CSS -------------------------------------------------------------- */
+
+.test {
+  background-color: #f4f4f4;
+}
+.test .test-in {
+  text-align: center;
+  padding: 27px;
+  font-family: sans-serif;
+}
+.test .test-in img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 50%;
+}
+.test .test-in .ptag {
+  font-family: system-ui;
+  margin-top: 23px;
+}
+.test .test-in .ptag .tag {
+  margin-top: 30px;
+  font-family: inherit;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+/* ABOUT CSS ------------------------------------------------------ */
+
+.About .About-in {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 49px;
+}
+.About .About-in .left-box {
+  width: 60%;
+  position: relative;
+}
+
+.About .About-in .left-box img {
+  width: 100%;
+  max-width: 609px;
+}
+
+.About .About-in .right-box {
+  width: 42%;
+}
+
+.About .About-in .left-box .abs h1 {
+  width: 314px;
+  position: absolute;
+  top: 88%;
+  background-color: #838383;
+  color: white;
+  text-align: center;
+  left: 49%;
+  padding: 22px;
+  font-family: monospace;
+}
+.About .About-in .right-box h2 {
+  font-family: inherit;
+  margin-top: 11px;
+}
+.About .About-in .right-box h1 {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  margin-top: 9px;
+}
+.About .About-in .right-box p {
+  font-family: sans-serif;
+  line-height: 30px;
+  margin-top: 11px;
+}
+
+.About .About-in .right-box button {
+  background-color: white;
+  padding: 6px;
+  width: 115px;
+  border-radius: 9px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: cursive;
+}
+
+.About .About-in .right-box button:hover {
+  background-color: #494848;
+  transition: all 0.5s;
+  color: white;
+  cursor: pointer;
+}
+
+/* ABOUT PRODUCTS CSS ----------------------------------------------------------- */
+
+/* PRODUCT 1 ------------------ */
+
+.pro {
+  margin-top: 52px;
+}
+.pro .center-box {
+  text-align: center;
+}
+.pro .center-box .tagp {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+.pro .center-box h1 {
+  font-family: sans-serif;
+  font-size: 37px;
+}
+.pro .center-box .ptag {
+  font-family: system-ui;
+}
+.pro .pro-in {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+}
+.pro .pro-in .left-box {
+  width: 45%;
+}
+.pro .pro-in .left-box img {
+  width: 100%;
+}
+.pro .pro-in .right-box {
+  width: 51%;
+}
+.pro .pro-in .right-box h2 {
+  font-family: math;
+  font-size: 23px;
+}
+.pro .pro-in .right-box h1 {
+  color: #c5c6d0;
+  font-size: 113px;
+  font-family: system-ui;
+  position: absolute;
+  z-index: -5;
+  margin-top: -54px;
+}
+.pro .pro-in .right-box .ptext {
+  font-family: system-ui;
+  color: black;
+  margin-top: 40px;
+  line-height: 28px;
+}
+.pro .pro-in .right-box .textp {
+  font-family: system-ui;
+  color: black;
+  margin-top: 18px;
+  line-height: 28px;
+}
+
+.pro .pro-in .right-box h3 {
+  font-family: sans-serif;
+  margin-top: 29px;
+  font-size: 27px;
+}
+.pro .pro-in .right-box .money {
+  margin-top: 18px;
+  font-family: none;
+  font-weight: bold;
+}
+.pro .pro-in .right-box .money del {
+  color: #6d6d6d;
+  padding-right: 20px;
+}
+.pro .pro-in .right-box .btn {
+  margin-top: 32px;
+  padding: 9px;
+}
+.pro .pro-in .right-box .btn .view {
+  background-color: #494848;
+  color: #e7e7e7;
+  padding: 6px;
+  width: 139px;
+  font-size: 13px;
+  font-family: revert;
+  font-weight: bold;
+  margin-right: 26px;
+}
+.pro .pro-in .right-box .btn .view:hover {
+  background-color: white;
+  transition: all 0.5s;
+  color: #494848;
+  cursor: pointer;
+}
+.pro .pro-in .right-box .btn .cart {
+  background-color: white;
+  color: black;
+  padding: 6px;
+  width: 139px;
+  font-size: 13px;
+  font-family: revert;
+  font-weight: bold;
+}
+.pro .pro-in .right-box .btn .cart:hover {
+  background-color: #494848;
+  transition: all 0.5s;
+  color: white;
+  cursor: pointer;
+}
+
+/* PRODUCT 2 ------------------ */
+
+.pro .pro-in1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+}
+.pro .pro-in1 .right {
+  width: 45%;
+}
+.pro .pro-in1 .right img {
+  width: 100%;
+}
+.pro .pro-in1 .left {
+  width: 51%;
+}
+.pro .pro-in1 .left h2 {
+  font-family: math;
+  font-size: 23px;
+}
+.pro .pro-in1 .left h1 {
+  color: #c5c6d0;
+  font-size: 113px;
+  font-family: system-ui;
+  position: absolute;
+  z-index: -5;
+  margin-top: -54px;
+}
+.pro .pro-in1 .left .ptextp {
+  font-family: system-ui;
+  color: black;
+  margin-top: 40px;
+  line-height: 28px;
+}
+.pro .pro-in1 .left .textptext {
+  font-family: system-ui;
+  color: black;
+  margin-top: 18px;
+  line-height: 28px;
+}
+
+.pro .pro-in1 .left h3 {
+  font-family: sans-serif;
+  margin-top: 29px;
+  font-size: 27px;
+}
+.pro .pro-in1 .left .money {
+  margin-top: 18px;
+  font-family: none;
+  font-weight: bold;
+}
+.pro .pro-in1 .left .money del {
+  color: #6d6d6d;
+  padding-right: 20px;
+}
+.pro .pro-in1 .left .button {
+  margin-top: 32px;
+  padding: 9px;
+}
+.pro .pro-in1 .left .button .views {
+  background-color: #494848;
+  color: #e7e7e7;
+  padding: 6px;
+  width: 139px;
+  font-size: 13px;
+  font-family: revert;
+  font-weight: bold;
+  margin-right: 26px;
+}
+.pro .pro-in1 .left .button .views:hover {
+  background-color: white;
+  transition: all 0.5s;
+  color: #494848;
+  cursor: pointer;
+}
+.pro .pro-in1 .left .button .carts {
+  background-color: white;
+  color: black;
+  padding: 6px;
+  width: 139px;
+  font-size: 13px;
+  font-family: revert;
+  font-weight: bold;
+}
+.pro .pro-in1 .left .button .carts:hover {
+  background-color: #494848;
+  transition: all 0.5s;
+  color: white;
+  cursor: pointer;
+}
+
+/* CART CSS --------------------------------------------------------------------------- */
+
+.else {
+  font-size: x-large;
+  text-align: center;
+  font-size: 34px;
+  margin-top: 19px;
+  color: #ff9000;
+}
+.else img {
+  width: 100%;
+  max-width: 120px;
+}
+.else p {
+  margin-top: 29px;
+}
+
+.cart-item {
+  display: flex;
+  margin-top: 22px;
+  border: 2px solid;
+}
+.cart-item:hover {
+  box-shadow: 0px 0 5px rgb(29, 40, 39);
+  cursor: pointer;
+}
+.cart-item .cart-photo img {
+  width: 100%;
+  max-width: 586px;
+  height: 90%;
+}
+
+.cart-item .cart-photo img:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+  overflow: hidden;
+}
+.cart-item .cart-item-in {
+  padding: 42px;
+  padding-left: 101px;
+}
+.cart-item .cart-item-in .cart-title {
+  font-size: 31px;
+  color: #b45c2f;
+}
+.cart-item .cart-photo {
+  padding: 16px;
+}
+.cart-item .cart-item-in .cart-price {
+  padding: 30px;
+}
+.cart-item .cart-item-in .cart-price h4 {
+  font-family: sans-serif;
+  padding: 7px;
+  font-size: 21px;
+}
+
+.cart-item .cart-item-in .cart-price .remove-button {
+  padding: 10px;
+  margin-top: 21px;
+}
+.cart-item .cart-item-in .cart-price .remove-button .buy {
+  background-color: #494848;
+  color: #e7e7e7;
+  padding: 6px;
+  width: 139px;
+  font-size: 13px;
+  font-family: revert;
+  font-weight: bold;
+  margin-right: 26px;
+}
+.cart-item .cart-item-in .cart-price .remove-button .remove {
+  background-color: white;
+  color: black;
+  padding: 6px;
+  width: 139px;
+  font-size: 13px;
+  font-family: revert;
+  font-weight: bold;
+}
+.cart-item .cart-item-in .cart-price .remove-button .buy:hover {
+  background-color: white;
+  transition: all 0.5s;
+  color: #494848;
+  cursor: pointer;
+}
+
+.cart-item .cart-item-in .cart-price span {
+  background-color: white;
+  background-color: white;
+  padding-left: 15px;
+}
+.cart-item .cart-item-in .cart-price span .stars {
+  width: 3%;
+  background-color: white;
+  margin-bottom: -4px;
+}
+
+.cart-item .cart-item-in .cart-price .remove-button .remove:hover {
+  background-color: #494848;
+  transition: all 0.5s;
+  color: white;
+  cursor: pointer;
+}
+.cart .cart-head .amazon-cart img {
+  width: 100%;
+  max-width: 295px;
+  margin-top: 43px;
+}
+.cart .cart-head {
+  display: flex;
+  justify-content: space-between;
+}
+.cart .cart-head .cart-img img {
+  width: 100%;
+  max-width: 140px;
+}
+.cart .total {
+  font-family: system-ui;
+  color: darkolivegreen;
+  margin-top: 16px;
+}
+
+.Foot {
+  margin-top: 120px;
+}
+
+/* @media (max-width:1200px)
+@media (max-width:1000px)
+@media (max-width:992px)
+@media (max-width:776px)
+@media (max-width:567px)
+@media (max-width:480px)
+@media (max-width:320px) */
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 980px;
+  }
+  .About .About-in .left-box img {
+    width: 100%;
+    max-width: 514px;
+  }
+  .About .About-in .left-box .abs h1 {
+    width: 281px;
+    top: 88%;
+    left: 49%;
+    padding: 17px;
+  }
+
+  .About .About-in .right-box {
+    width: 38%;
+  }
+  .items .container .item-1 {
+    width: 31.5%;
+  }
+
+  .slider .btn .back {
+    top: 79%;
+  }
+  .slider .btn .nxt {
+    top: 79%;
+  }
+}
+
+
+@media (max-width:1000px){
+  .container{
+    max-width: 950px;
+  }
+}
+
+
+@media (max-width:992px){
+  .container{
+    max-width: 750px;
+  }
+
+
+  .About .About-in .left-box .abs h1 {
+    width: 218px;
+    top: 77%;
+    left: 51%;
+    padding: 18px;
+    font-size: 20px;
+}
+.contact .contact-in .box-1 .location .image img {
+  width: 50px;
+  padding: 9px;
+  margin-top: 8px;
+}
+.About .About-in .right-box {
+  width: 34%;
+}
+.About .About-in .right-box h2 {
+  
+  font-size: 25px;
+  margin-top: 0px;
+}
+.About .About-in .right-box h1 {
+  font-size: 42px;
+  margin-top: 0px;
+}
+.About .About-in .left-box {
+ 
+  margin-top: 45px;
+  
+}
+.items .container .item-1 .photo img {
+  width: 100%;
+  height: 310px;
+}
+
+.items .container .item-1 {
+  margin: 6px;
+}
+
+.About .About-in .left-box img {
+  width: 100%;
+  max-width: 416px;
+}
+}
+
+
+
+@media (max-width:776px)
+{
+  .container{
+    max-width: 550px;
+  }
+
+  .items .container .item-1 {
+    width: 47.5%;
+}
+.footer .container .footer-in .box-1 {
+  background-color: rgb(29, 40, 39);
+  cursor: pointer;
+  width: 28%;
+  padding: 20px;
+  font-family: cursive;
+  color: white;
+}
+
+
+
+
+
+.About .About-in {
+  margin-top: 49px;
+  display: block;
+  text-align: center;
+}
+.items .container .item-1 .photo img {
+  width: 100%;
+  height: 272px;
+}
+.About .About-in .right-box h2 {
+  font-size: 18px;
+  margin-top: 0px;
+}
+.About .About-in .right-box h1 {
+  font-size: 31px;
+  margin-top: 0px;
+}
+.About .About-in .right-box p {
+  font-family: sans-serif;
+  line-height: 31px;
+  margin-top: 0px;
+  font-size: 13px;
+}
+.About .About-in .right-box {
+  width: 100%;
+  margin-top: 50px;
+}
+.About .About-in .left-box .abs h1 {
+  width: 200px;
+  top: 92%;
+  left: 63%;
+  padding: 16px;
+  font-size: 16px;
+}
+.About .About-in .left-box {
+  width: 100%;
+  position: relative;
+}
+.About .About-in .left-box img {
+  width: 100%;
+  max-width: 502px;
+}
+.pro .pro-in {
+  display: block;
+  margin-top: 39px;
+  text-align: center;
+}
+.pro .pro-in .left-box {
+  width: 100%;
+}
+.pro .pro-in1 {
+  display: block;
+  margin-top: 39px;
+  text-align: center;
+}
+.pro .pro-in .right-box .ptext {
+  font-family: system-ui;
+  color: black;
+  margin-top: 27px;
+  line-height: 31px;
+}
+.pro .pro-in .right-box .textp {
+  font-family: system-ui;
+  color: black;
+  margin-top: 6px;
+  line-height: 31px;
+}
+.pro .pro-in .right-box {
+  width: 100%;
+  margin-top: 35px;
+}
+.pro .pro-in .left-box img {
+  width: 100%;
+  margin-top: 51px;
+}
+.pro .pro-in1 .left .ptextp {
+  font-family: system-ui;
+  color: black;
+  margin-top: 34px;
+  line-height: 31px;
+}
+.pro .pro-in1 .left .textptext {
+  font-family: system-ui;
+  color: black;
+  margin-top: 10px;
+  line-height: 31px;
+}
+.pro .pro-in1 .left {
+  width: 100%;
+}
+.pro .pro-in1 .right {
+  width: 100%;
+}
+.pro .pro-in1 .right img {
+  width: 100%;
+  height: 400px;
+  margin-top: 51px;
+}
+
+.pro .pro-in1 .left .button .views {
+  background-color: #494848;
+  color: #e7e7e7;
+  padding: 9px;
+  width: 104px;
+  font-size: 11px;
+  font-family: revert;
+  font-weight: bold;
+}
+.pro .pro-in1 .left .button .carts {
+  padding: 9px;
+  width: 104px;
+  font-size: 11px;
+  font-family: revert;
+  font-weight: bold;
+}
+.pro .pro-in .right-box .btn 
+{
+  margin-top: 17px;
+}
+.pro .pro-in .right-box .btn .view {
+  background-color: #494848;
+  color: #e7e7e7;
+  padding: 9px;
+    width: 104px;
+    font-size: 11px;
+  font-family: revert;
+  font-weight: bold;
+}
+.pro .pro-in .right-box .btn .cart {
+  padding: 9px;
+  width: 104px;
+  font-size: 11px;
+  font-family: revert;
+  font-weight: bold;
+}
+
+.contact .contact-in .box-1 .location .text
+{
+  font-size: 9px;
+}
+.contact .contact-in .box-1 .location .image img {
+  width: 52px;
+  padding: 9px;
+  margin-top: 8px;
+}
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:567px)
+{
+  *
+  {
+    padding: 10px;
+  }
+
+  .items .products {
+    display: flex;
+    flex-wrap: wrap;
+}
+.items .container .item-1 {
+  width: 47.5%;
+  margin: 4px;
+}
+.items .container .item-1 .photo img {
+  width: 100%;
+  height: 222px;
+}
+
+.pro .pro-in .right-box h3 {
+  margin-top: 14px;
+  
+}
+.pro .pro-in .right-box .money {
+  margin-top: 7px;
+}
+
+.pro .pro-in .right-box .btn
+{
+  
+  margin-top: 11px;
+}
+
+.pro .pro-in1 .left h3 {
+  margin-top: 14px;
+}
+.pro .pro-in1 .left .money
+{
+  margin-top: 7px;
+}
+.pro .pro-in1 .left .button {
+  
+  margin-top: 11px;
+}
+.About .About-in .left-box img {
+  width: 100%;
+  max-width: 400px;
+}
+.About .About-in .left-box {
+  margin-top: 34px;
+}
+.About .About-in .left-box .abs h1 {
+  width: 172px;
+  top: 90%;
+  left: 61%;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.contact .contact-in .box-1 .location {
+  cursor: pointer;
+  display: flex;
+  width: 77%;
+  border-radius: 1px;
+  background-color: rgb(29, 40, 39);
+  margin: 13px;
+}
+.contact .contact-in .box-1 .location .image img {
+  width: 37px;
+  padding: 9px;
+  margin-top: 8px;
+}
+.contact .contact-in {
+  display: block;
+}
+.contact .contact-in .box-1 {
+  width: 100%;
+  background-color: rgb(29, 40, 39);
+}
+.contact .contact-in .box-2 {
+  background-color: white;
+  width: 100%;
+}
+}
+
+
+@media (max-width:480px)
+{
+  *
+  {
+    padding: 10px;
+  }
+  .items .container .item-1 {
+    width: 106.5%;
+    margin: 4px;
+}
+.About .About-in .left-box .abs h1 {
+  width: 160px;
+  top: 87%;
+  left: 57%;
+  padding: 14px;
+  font-size: 14px;
+}
+.contact .contact-in {
+  display: block;
+}
+.contact .contact-in .box-1 {
+  width: 100%;
+  background-color: rgb(29, 40, 39);
+}
+.contact .contact-in .box-2 {
+  background-color: white;
+  width: 100%;
+}
+}
+
+
+
+@media (max-width:320px)
+{
+  *
+  {
+    padding: 10px;
+  }
+}
+
+
+
