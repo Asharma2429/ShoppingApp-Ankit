@@ -112,18 +112,23 @@ html {
 
   justify-content: space-between;
 }
-.nav .nav-in .list li {
+.nav .nav-in .list .menu li {
   display: inline-block;
   padding: 17px;
   cursor: pointer;
   font-family: system-ui;
 }
-.nav .nav-in .list a {
+.nav .nav-in .list .menu a {
   color: white;
 }
-.nav .nav-in .list li:hover {
+.nav .nav-in .list .menu li:hover {
   color: rgb(172, 170, 170);
 }
+.nav .nav-in .list .bar
+{
+  display: none;
+}
+
 
 /* API CSS------------------------------------------------------------------------------- */
 
@@ -1007,12 +1012,25 @@ html {
   .slider .btn .nxt {
     top: 79%;
   }
+
+
+  .nav .nav-in .list .bar
+  {
+      display:none;
+      color: white;
+  }
+
 }
 
 
 @media (max-width:1000px){
   .container{
     max-width: 950px;
+  }
+  .nav .nav-in .list .bar
+  {
+      display: none;
+      color: white;
   }
 }
 
@@ -1065,6 +1083,39 @@ html {
   width: 100%;
   max-width: 416px;
 }
+
+/* NAV css ----------------------------------------------------- */
+
+.nav .nav-in .menu li {
+  display: inline-block;
+  position: sticky;
+  padding: 8px 0;
+  margin: 15px 10px;
+  color: white;
+  font-size: large;
+}
+
+.nav .nav-in .menu ul {
+  display: flex;
+}
+.nav .nav-in .list .bar
+{
+    display: none;
+    color: white;
+}
+
+
+
+
+.footer .container .footer-in .box-3 p {
+  font-family: sans-serif;
+  margin-left: 21px;
+  padding: 3px;
+}
+
+
+
+
 }
 
 
@@ -1081,11 +1132,40 @@ html {
 .footer .container .footer-in .box-1 {
   background-color: rgb(29, 40, 39);
   cursor: pointer;
-  width: 28%;
+  width: 35%;
   padding: 20px;
   font-family: cursive;
   color: white;
 }
+.footer .container .footer-in .box-2 {
+  background-color: rgb(29, 40, 39);
+  width: 17%;
+  color: white;
+  font-family: monospace;
+}  
+
+.footer .container .footer-in {
+  display: block;
+  padding-bottom: 55px;
+  text-align: -webkit-center;
+}
+.footer .container .footer-in .box-1 {
+  width: 100%;
+  padding: 20px;
+}
+.footer .container .footer-in .box-2 {
+  background-color: rgb(29, 40, 39);
+  width: 100%;
+  color: white;
+  font-family: monospace;
+}
+.footer .container .footer-in .box-3 {
+  background-color: rgb(29, 40, 39);
+  color: white;
+  font-family: monospace;
+  width: 100%;
+}
+
 
 
 
@@ -1149,7 +1229,7 @@ html {
 .pro .pro-in .right-box .ptext {
   font-family: system-ui;
   color: black;
-  margin-top: 27px;
+  margin-top: 69px;
   line-height: 31px;
 }
 .pro .pro-in .right-box .textp {
@@ -1169,7 +1249,7 @@ html {
 .pro .pro-in1 .left .ptextp {
   font-family: system-ui;
   color: black;
-  margin-top: 34px;
+  margin-top: 69px;
   line-height: 31px;
 }
 .pro .pro-in1 .left .textptext {
@@ -1198,6 +1278,7 @@ html {
   font-size: 11px;
   font-family: revert;
   font-weight: bold;
+  margin-right: 0;
 }
 .pro .pro-in1 .left .button .carts {
   padding: 9px;
@@ -1218,6 +1299,7 @@ html {
     font-size: 11px;
   font-family: revert;
   font-weight: bold;
+  margin-right: 0;
 }
 .pro .pro-in .right-box .btn .cart {
   padding: 9px;
@@ -1236,6 +1318,54 @@ html {
   padding: 9px;
   margin-top: 8px;
 }
+
+
+
+/* NAV CSS ---------------------------------- */
+
+.nav .nav-in .list .bar
+    {
+        display: block;
+        color: white;
+        font-size: 20px;
+        margin-top: 19px;
+    }
+
+    .nav .nav-in .menu ul {
+      display: block;
+     background-color:  rgb(29, 40, 39);
+  }
+
+
+  .nav .nav-in .list .menu
+  {
+      display:none;
+      position: absolute;
+      left: -35px;
+  }
+
+  .nav .nav-in .list{
+      position: relative;
+  }
+
+  .nav .nav-in .list:hover .menu
+    {
+        display:block;
+    }
+
+
+    .nav .nav-in .menu li {
+      display: inline-block;
+      position: sticky;
+      padding: 8px 0;
+      margin: 1px 10px;
+      /* border-bottom: 2px solid black; */
+      color: white;
+      font-size: 17px;
+  }
+
+
+
 }
 
 
@@ -1345,9 +1475,9 @@ html {
 }
 .About .About-in .left-box .abs h1 {
   width: 160px;
-  top: 87%;
-  left: 57%;
-  padding: 14px;
+  top: 80%;
+  left: 39%;
+  padding: 12px;
   font-size: 14px;
 }
 .contact .contact-in {
@@ -1360,6 +1490,14 @@ html {
 .contact .contact-in .box-2 {
   background-color: white;
   width: 100%;
+}
+
+.login .login-in .box {
+  width: 318px;
+  margin: auto;
+  border: 1px solid #c8c8c8;
+  text-align: start;
+  font-family: cursive;
 }
 }
 
