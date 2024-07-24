@@ -1378,10 +1378,11 @@ html {
 
 @media (max-width:567px)
 {
-  *
-  {
-    padding: 10px;
-  }
+  .container {
+
+    max-width: 450px;
+
+}
 
   .items .products {
     display: flex;
@@ -1465,11 +1466,14 @@ html {
 
 @media (max-width:480px)
 {
-  *
-  {
-    padding: 10px;
-  }
-  .items .container .item-1 {
+  .container {
+
+    max-width: 300px;
+
+}
+
+ 
+  /* .items .container .item-1 {
     width: 106.5%;
     margin: 4px;
 }
@@ -1498,7 +1502,9 @@ html {
   border: 1px solid #c8c8c8;
   text-align: start;
   font-family: cursive;
-}
+} */
+
+
 }
 
 
