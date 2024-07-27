@@ -24,7 +24,7 @@ function Login()
 
 let check=()=>
 {
-    if(email=="ankitpapa@gmail.com" && pass==123)
+    if(email=="ankit@gmail.com" && pass==123)
     {
     nav("/home")
     }
@@ -35,15 +35,15 @@ let check=()=>
     {
         alert("Enter your email")
     }
-    else if(email=="ankitpapa@gmail.com" && pass==0)
+    else if(email=="ankit@gmail.com" && pass==0)
     {
         alert("Enter your Password")
     }
-    else if(email!="ankitpapa@gmail.com" && pass==123)
+    else if(email!="ankit@gmail.com" && pass==123)
     {
         alert("Check your E-mail")
     }
-    else if(email=="ankitpapa@gmail.com" && pass!=123)
+    else if(email=="ankit@gmail.com" && pass!=123)
     {
         alert("Check your Password")
     }
