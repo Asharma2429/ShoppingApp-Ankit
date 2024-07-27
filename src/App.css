@@ -1692,14 +1692,14 @@ html {
   border: 1px solid #c8c8c8;
   text-align: start;
   font-family: cursive;
-  margin-left: 1px;
+  margin-left: 28px;
 }
 .login .login-in .img img {
   width: 100%;
   max-width: 128px;
   margin-top: 9px;
   margin-bottom: 10px;
-  margin-left: 44px;
+  margin-left: 89px;
 }
 
 .cart-item {
@@ -1715,6 +1715,11 @@ height: 90%;
 .cart-item .cart-item-in {
   padding: 22px;
   padding-left: 44px;
+}
+.nav .nav-in .list .menu {
+  display: none;
+  position: absolute;
+  left: -72px;
 }
 
 }
@@ -1759,6 +1764,12 @@ height: 90%;
   font-family: revert;
   font-weight: bold;
   margin-left: 33px;
+}
+
+.nav .nav-in .list .menu {
+  display: none;
+  position: absolute;
+  left: -72px;
 }
 }
 

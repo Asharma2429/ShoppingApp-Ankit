@@ -9,7 +9,7 @@ import image5 from "../image/slider 5.webp"
 
 function Slider(){
 
-   const images=[image1,image2,image3,image4,image5]
+   const images=[image2,image1,image3,image4,image5]
    const[update,setupdate] =useState(0);
 
    const nextbtn=()=>{
