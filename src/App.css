@@ -1653,7 +1653,6 @@ font-family: serif;
     .items .container .item-1 .price .a .c i:hover
     {
       color: red;
-      /* background-color: red; */
     }
     
 
@@ -1789,7 +1788,14 @@ display: none;
   border: none;
   background-color: white;
 }
-
+.items .container .item-1 .price .a .b i:hover
+{
+  color: gold;
+}
+.items .container .item-1 .price .a .c i:hover
+{
+  color: red;
+}
 
 
 
@@ -1864,7 +1870,14 @@ height: 90%;
   display: none;
   /* top: 79%; */
 }
-
+.items .container .item-1 .price .a .b i:hover
+{
+  color: gold;
+}
+.items .container .item-1 .price .a .c i:hover
+{
+  color: red;
+}
 .items .container .item-1 .price .cart-btn {
  
   padding: 6px;
