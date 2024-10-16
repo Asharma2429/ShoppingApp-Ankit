@@ -1,48 +1,64 @@
-import React, { useState } from "react";
-import image1 from "../image/slider 1.jpg"
-import image2 from "../image/slider 2.jpg"
-import image3 from "../image/slider 3.jpg"
-import image4 from "../image/slider 4.webp"
-import image5 from "../image/slider 5.webp"
+import React, { useState, useEffect } from "react";
+import image1 from "../image/slider 1.jpg";
+import image2 from "../image/slider 2.jpg";
+import image3 from "../image/slider 3.jpg";
+import image4 from "../image/slider 4.webp";
+import image5 from "../image/slider 5.webp";
 
+function Slider() {
+    const images = [image2, image1, image3, image4, image5];
+    const [update, setUpdate] = useState(0);
 
+    const nextbtn = () => {
+        setUpdate((prev) => (prev + 1) % images.length);
+    };
 
-function Slider(){
+    const backbtn = () => {
+        setUpdate((prev) => (prev - 1 + images.length) % images.length);
+    };
 
-   const images=[image2,image1,image3,image4,image5]
-   const[update,setupdate] =useState(0);
+    useEffect(() => {
+        const intervalId = setInterval(nextbtn, 3000); // Change image every 3 seconds
 
-   const nextbtn=()=>{
-    if(update<4){
-        setupdate(update+1)
-    }
-   }
-   const backbtn=()=>{
-    if(update>0){
-        setupdate(update-1)
-    }
-   }
-    return(
+        // Clear the interval on component unmount
+        return () => clearInterval(intervalId);
+    }, []); // Empty dependency array means this runs once when the component mounts
+
+    return (
         <>
-        <div className="slider">
-            <div className="image">
-                {images.map((img,i)=>{
-                    return (
-                        <img src={img}  className={i==update?"active":"d-none"}/>
-                    
-                    )
-                })}
-            
+            <div className="slider">
+                <div className="image">
+                    {images.map((img, i) => (
+                        <img
+                            key={i}
+                            src={img}
+                            className={i === update ? "active" : "d-none"}
+                            alt={`Slide ${i + 1}`}
+                        />
+                    ))}
+                </div>
+{/* 
+                <div className="btn">
+                    <button className="nxt" onClick={nextbtn}>
+                        <i className="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button className="back" onClick={backbtn}>
+                        <i className="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div> */}
 
+                <div className="dots">
+                    {images.map((_, i) => (
+                        <span
+                            key={i}
+                            className={`dot ${i === update ? "active-dot" : ""}`}
+                            onClick={() => setUpdate(i)}
+                        ></span>
+                    ))}
+                </div>
             </div>
-            <div className="btn">
-                <button className="nxt" onClick={nextbtn}><i class="fa-solid fa-arrow-right"></i></button>
-                <button className="back" onClick={backbtn}><i class="fa-solid fa-arrow-left"></i></button>
-            </div>
-        </div>
-
         </>
-    )
+    );
 }
 
-export{Slider}
+export { Slider };

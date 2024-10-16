@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import shop from "../image/Amazon_logo.svg (1).png"
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 function Login()
@@ -27,6 +28,21 @@ let check=()=>
     if(email=="ankit@gmail.com" && pass==123)
     {
     nav("/home")
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      });
+      Toast.fire({
+        icon: "success",
+        title: "Sign in successfully"
+      });
     }
     else if(email==0 && pass==0){
         alert("Enter your E-mail & Password")
@@ -83,9 +99,9 @@ let check=()=>
         <button onClick={check}>Sign in</button>
 
 
-        <div className="new">
-      <p>------------- New to Amazon ?------------</p>
-        </div>
+        {/* <div className="new"> */}
+      {/* <p>------------- New to Amazon ?------------</p> */}
+        {/* </div> */}
 
         <div className="create">
 <button>Create an account</button>

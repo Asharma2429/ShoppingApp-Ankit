@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
-import star from "../image/wired-outline-237-star-rating-morph.gif";
 import image from "../image/wired-outline-332-loader-3.gif"
 import { useCart } from "react-use-cart";
+import Swal from "sweetalert2";
+
 
 function Api() {
+
+
+
 
   const {addItem}=useCart()
   let [dataa, setdataa] = useState([]);
@@ -15,8 +19,35 @@ function Api() {
 
 const click=()=>
 {
-alert("ITEM ADDED TO CART")
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-start",
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    }
+  });
+  Toast.fire({
+    icon: "success",
+    title: "Item added successfully"
+  });
 }
+
+const wish=()=>
+{
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Item added to wish list",
+    showConfirmButton: false,
+    timer: 1500
+  });
+}
+
+
 
   const Fill = async () => {
     const reserve = await fetch("https://fakestoreapi.com/products");
@@ -72,20 +103,55 @@ alert("ITEM ADDED TO CART")
                           <h4>
                             Rating : {item.rating.rate}
                             <span>
-                              <img src={star} className="stars"  />
-                              <img src={star} className="stars" />
-                              <img src={star} className="stars" />
-                              <img src={star} className="stars" />
-                              <img src={star} className="stars" />
+                            
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+      
+
                             </span>
                           </h4>
                           <h4> Count : {item.rating.count}</h4>
                           
                           <div className="money">
-                          <h4>Price : <sup>$</sup> {item.price}</h4>
+                          <h4>Price : $ {item.price}</h4>
+                       </div>
+
+
+
+
+
+
+                          <div className="a">
+
+                          <button className="cart-btn"  onClick={() =>{ addItem(item) ; click() } } >Add To Cart</button>
+
+                         <button className="b" onClick={() =>{ addItem(item) ; click()} } > 
+                          <i class="fa-solid fa-cart-shopping "></i> 
+                         </button>
+                          
+
+
+                          
+                          <button className="wishlist" onClick={wish}>Add to wishlist</button>
+                          <button className="c"   onClick={wish}>
+                            <i    class="fa-regular fa-heart ">  </i>
+                            </button>
+                          
+                         
                           </div>
-                          <button className="cart-btn" onClick={() =>{ addItem(item) ; click() } } >Add To Cart</button>
-                          <button className="wishlist">Add to wishlist</button>
+
+
+
+
+
+
+
+
+                           {/* //not in use */}
+
 
                         </div>
 

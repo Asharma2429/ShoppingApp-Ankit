@@ -9,7 +9,7 @@ function Nav() {
         <div className="container">
           <div className="nav-in">
             <div className="image">
-              <img src={amazon} alt="amazon" />
+              <img src={amazon} alt="amazon"  />
             </div>
 
             <div className="list">
@@ -48,7 +48,12 @@ function Nav() {
           </div>
         </div>
       </div>
+
+      
+
+
     </>
+    
   );
 }
 export { Nav };

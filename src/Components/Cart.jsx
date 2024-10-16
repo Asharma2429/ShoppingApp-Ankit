@@ -2,13 +2,34 @@ import React from "react";
 import { useCart } from "react-use-cart";
 import ama from "../image/Amazon_logo.svg (1).png"
 import cart from "../image/shopping-cart-logo-icon-shopping-cart-removebg-preview.png"
-import stars from "../image/wired-outline-237-star-rating-morph.gif"
 import { Footer } from "./Footer";
+import Swal from "sweetalert2";
 
 function Cart() {
-  const { isEmpty, totalUniqueItems, items, updateItemQuantity, removeItem } =useCart();
 
-    if(isEmpty) return(<div className="else"> <img src={ama} alt="" /><br /> <p >  YOUR CART IS EMPTY</p> </div>)
+  const wish =()=>
+    {
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Item Added to Wishlist",
+        showConfirmButton: false,
+        timer: 1500
+      });
+    
+    }
+
+    const remove=()=>
+    {
+      Swal.fire("Item Removed");
+    }
+
+    const { isEmpty, totalUniqueItems, items, updateItemQuantity, removeItem } =useCart();
+
+    if(isEmpty) 
+      return(<div className="else">
+         <img src={ama} alt="" /><br />
+          <p >  YOUR CART IS EMPTY</p> </div>)
     
 
   return (
@@ -50,24 +71,24 @@ function Cart() {
                 <h4>
                   Rating : {item.rating.rate}{" "}
                   <span>
-                    <img src={stars} className="stars"  />
-                              <img src={stars} className="stars" />
-                              <img src={stars} className="stars" />
-                              <img src={stars} className="stars" />
-                              <img src={stars} className="stars" />
+                  <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                   </span>
                 </h4>
                 <h4> Count : {item.rating.count}</h4>
 
                 <div className="cart-money">
                   <h4>
-                    Price : <sup>$</sup> {item.price}
+                    Price :${item.price}
                   </h4>
                 </div>
                 
                 <div className="remove-button">
-                <button className="buy">Add To Whislist</button>
-                <button className="remove" onClick={() => removeItem(item.id)} >Remove</button>
+                <button className="buy"  onClick={() => {removeItem(item.id); wish()} }>Add To Whislist</button>
+                <button className="remove" onClick={() => {removeItem(item.id); remove() }} >Remove</button>
                 </div>
                 </div>
 
