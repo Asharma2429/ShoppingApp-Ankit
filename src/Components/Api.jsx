@@ -137,7 +137,7 @@ const wish=()=>
                           
                           <button className="wishlist" onClick={wish}>Add to wishlist</button>
                           <button className="c"   onClick={wish}>
-                            <i    class="fa-regular fa-heart ">  </i>
+                          <i class="fa-solid fa-heart"></i>
                             </button>
                           
                          
