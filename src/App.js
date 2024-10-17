@@ -4,6 +4,7 @@ import { Login } from './Components/Login';
 import { Home } from './Components/Home';
 import { CartProvider } from 'react-use-cart';
 import { Cart } from './Components/Cart';
+import { SignUp } from './Components/Signup';
 // import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 function App() {
   return (
@@ -11,10 +12,13 @@ function App() {
 
 <CartProvider>
 <BrowserRouter>
-<Link to="/"></Link>
+<Link to="/login"></Link>
 <Link to="/home"></Link>
+<Link to="/"></Link>
 <Routes>
-  <Route extact path='/' element={<Login/>}/>
+  <Route extact path='/login' element={<Login/>}/>
+  <Route extact path='/' element={<SignUp/>}/>
+
   <Route extact path='/home' element={<Home/>}/>
   <Route extact path='/cart' element={<Cart/>}/>
 </Routes>
