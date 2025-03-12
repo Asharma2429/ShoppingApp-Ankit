@@ -11,10 +11,10 @@ function App() {
 
 <CartProvider>
 <BrowserRouter>
-<Link to="/"></Link>
+{/* <Link to="/"></Link> */}
 <Link to="/home"></Link>
 <Routes>
-  <Route extact path='/' element={<Login/>}/>
+  {/* <Route extact path='/' element={<Login/>}/> */}
   <Route extact path='/home' element={<Home/>}/>
   <Route extact path='/cart' element={<Cart/>}/>
 </Routes>
